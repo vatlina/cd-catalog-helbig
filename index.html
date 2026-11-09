@@ -4,37 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Компакт-диски от Jan Helbig (Klaus Helbig)</title>
-<style>
-:root{--bg:#f6f4ef;--fg:#222;--card:#fff;--line:#d9d4c8;--accent:#305496;--muted:#666}
-@media (prefers-color-scheme:dark){:root{--bg:#1e1e1e;--fg:#eee;--card:#2a2a2a;--line:#444;--accent:#8ab4f8;--muted:#aaa}}
-*{box-sizing:border-box}
-body{margin:0;font:14px/1.45 Arial,Helvetica,sans-serif;background:var(--bg);color:var(--fg)}
-header{padding:16px 20px 8px}
-h1{margin:0 0 10px;font-size:22px}
-.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:end;padding:0 20px 12px;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
-.filters label{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:3px}
-select,input[type=search]{padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font:inherit;min-width:200px;max-width:320px}
-input[type=search]{min-width:260px}
-button{padding:7px 12px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:6px;cursor:pointer;font:inherit}
-#count{margin-left:auto;color:var(--muted)}
-.wrap{padding:12px 20px 40px;overflow-x:auto}
-table{border-collapse:collapse;width:100%;min-width:1500px;background:var(--card)}
-th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:normal}
-th{background:var(--accent);color:#fff;font-weight:600;font-size:13px}
-td.n{font-weight:700;text-align:center;font-size:14px}
-td.title-col{font-weight:700;font-size:14px}
-.thumbs{display:flex;flex-wrap:wrap;gap:4px;width:210px}
-.thumbs img{height:76px;width:auto;max-width:100px;object-fit:cover;border:1px solid var(--line);border-radius:3px;cursor:zoom-in;background:#ddd}
-.small{font-size:12px;color:var(--muted)}
-#lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:100;flex-direction:column}
-#lb.on{display:flex}
-#lb img{max-width:92vw;max-height:84vh;box-shadow:0 0 30px #000}
-#lb .cap{color:#fff;margin-top:10px;font-size:13px;text-align:center;padding:0 20px}
-#lb .nav{position:absolute;top:50%;transform:translateY(-50%);font-size:44px;color:#fff;cursor:pointer;padding:10px 18px;user-select:none}
-#lb .prev{left:6px}#lb .next{right:6px}
-#lb .x{position:absolute;top:8px;right:18px;font-size:36px;color:#fff;cursor:pointer}
-.empty{padding:30px;text-align:center;color:var(--muted)}
-</style>
+<style>:root{--bg:#f6f4ef;--fg:#222;--card:#fff;--line:#d9d4c8;--accent:#305496;--muted:#666}@media (prefers-color-scheme:dark){:root{--bg:#1e1e1e;--fg:#eee;--card:#2a2a2a;--line:#444;--accent:#8ab4f8;--muted:#aaa}}*{box-sizing:border-box}body{margin:0;font:14px/1.45 Arial,Helvetica,sans-serif;background:var(--bg);color:var(--fg)}header{padding:16px 20px 8px}h1{margin:0 0 10px;font-size:22px}.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:end;padding:0 20px 12px;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}.filters label{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:3px}select,input[type=search]{padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font:inherit;min-width:200px;max-width:320px}input[type=search]{min-width:260px}button{padding:7px 12px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:6px;cursor:pointer;font:inherit}#count{margin-left:auto;color:var(--muted)}.wrap{padding:12px 20px 40px;overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:1500px;background:var(--card)}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:normal}th{background:var(--accent);color:#fff;font-weight:600;font-size:13px}td.n{font-weight:700;text-align:center;font-size:14px}td.title-col{font-weight:700;font-size:14px}.thumbs{display:flex;flex-wrap:wrap;gap:4px;width:210px}.thumbs img{height:76px;width:auto;max-width:100px;object-fit:cover;border:1px solid var(--line);border-radius:3px;cursor:zoom-in;background:#ddd}.small{font-size:12px;color:var(--muted)}#lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:100;flex-direction:column}#lb.on{display:flex}#lb img{max-width:92vw;max-height:84vh;box-shadow:0 0 30px #000}#lb .cap{color:#fff;margin-top:10px;font-size:13px;text-align:center;padding:0 20px}#lb .nav{position:absolute;top:50%;transform:translateY(-50%);font-size:44px;color:#fff;cursor:pointer;padding:10px 18px;user-select:none}#lb .prev{left:6px}#lb .next{right:6px}#lb .x{position:absolute;top:8px;right:18px;font-size:36px;color:#fff;cursor:pointer}.empty{padding:30px;text-align:center;color:var(--muted)}</style>
 </head>
 <body>
 <header><h1>Компакт-диски от Jan Helbig (Klaus Helbig)</h1></header>
@@ -47,18 +17,16 @@ td.title-col{font-weight:700;font-size:14px}
   <span id="count"></span>
 </div>
 <div class="wrap">
-<table id="tbl"><thead><tr>
-<th>№</th><th>Фото</th><th>Название</th><th>Дисков</th><th>Происхождение</th><th>Жанр</th><th>Тип подборки</th>
-<th>Композитор(ы)</th><th>Композитор(ы) (как на упаковке)</th><th>Исполнитель(и)</th><th>Исполнитель(и) (как на упаковке)</th>
-<th>Автор</th><th>Название аудиокниги</th><th>Примечание</th>
-</tr></thead><tbody id="body"></tbody></table>
+<table id="tbl"><thead><tr><th>№</th><th>Фото</th><th>Название</th><th>Дисков</th><th>Происхождение</th><th>Жанр</th><th>Тип подборки</th><th>Композитор(ы)</th><th>Композитор(ы) (как на упаковке)</th><th>Исполнитель(и)</th><th>Исполнитель(и) (как на упаковке)</th><th>Автор</th><th>Название аудиокниги</th><th>Примечание</th></tr></thead><tbody id="body"></tbody></table>
 <div id="empty" class="empty" hidden>Ничего не найдено</div>
 </div>
-
 <div id="lb"><span class="x" id="lbx">&times;</span><span class="nav prev" id="lbp">&#8249;</span><img id="lbi" alt=""><span class="nav next" id="lbn">&#8250;</span><div class="cap" id="lbc"></div></div>
-
 <script>
+// Базовый путь: работает и локально, и на GitHub Pages (относительно index.html)
 const BASE = "cover/";
+const THUMBS = BASE + "thumbs/";
+
+// ─── ДАННЫЕ ─── (сюда добавляем новые строки после 69)
 const DATA = [
   {"n": 1, "photos": ["001.jpg", "001-1.jpg"], "title": "Aangenaam… Barok plus '93", "discs": 1, "origin": "Нидерланды (CPG)", "genre": "барокко", "type": "сборник", "comp_ru": "Антонио Вивальди; Луиджи Боккерини; Унико Вильгельм ван Вассенар; Доменико Чимароза; Доменико Скарлатти; Йозеф Гайдн", "comp_orig": "Antonio Vivaldi; Luigi Boccherini; Unico Wilhelm van Wassenaer; Domenico Cimarosa; Domenico Scarlatti; Joseph Haydn", "perf_ru": "Джон Уильямс; Камерный оркестр им. Листа; Янош Ролла; Йо-Йо Ма; Пинхас Цукерман; Сент-Пол камерный оркестр; Амстердамский барочный оркестр; Тон Копман; И Музици; Хайнц Холлигер; Кристиан Цахариас; Сергей Накаряков; Лозаннский камерный оркестр; Хесус Лопес-Кобос", "perf_orig": "John Williams; Franz Liszt Chamber Orchestra; János Rolla; Yo-Yo Ma; Pinchas Zukerman; Saint Paul Chamber Orchestra; The Amsterdam Baroque Orchestra; Ton Koopman; I Musici; Heinz Holliger; Christian Zacharias; Sergei Nakariakov; Orchestre de Chambre de Lausanne; Jesús López-Cobos", "author": "", "abook": "", "note": ""},
   {"n": 2, "photos": ["002.jpg", "002-1.jpg"], "title": "Muziek in de Nederlanden", "discs": 1, "origin": "Нидерланды (Wijnand van Hooff)", "genre": "барокко", "type": "программа ансамбля", "comp_ru": "В. де Феш; К. Ф. Руппе; П. Хелендал; Б. Рулофс; Х. Фоккинг", "comp_orig": "W. de Fesch; C.F. Ruppe; P. Hellendaal; B. Ruloffs; H. Focking", "perf_ru": "Тон Копман; Амстердамский барочный ансамбль; Моника Хаджетт; Вилберт Хазельзет; Тини Матот; Рихте ван дер Меер", "perf_orig": "Ton Koopman; Amsterdams Barok Ensemble; Monica Huggett; Wilbert Hazelzet; Tini Mathot; Richte van der Meer", "author": "", "abook": "", "note": ""},
@@ -128,6 +96,7 @@ const DATA = [
   {"n": 68, "photos": ["068.jpg", "068-1.jpg"], "title": "Flauto dolce solo. Eine musikalische Zeitreise", "discs": 1, "origin": "Германия (Rondeau Production)", "genre": "старинная музыка; современная музыка", "type": "программа исполнителя", "comp_ru": "аноним (Санкт-Галлен, XI–XII вв.); Альфонсо X; Якоб ван Эйк; Иоганн Себастьян Бах; Георг Филипп Телеман; Иоганн Иоахим Кванц; Антон Геберле; Маркус Цанхаузен; Кристиане Мартини; Ханс-Дитер Ренкен", "comp_orig": "Anonymous (St. Gallen); Alfonso X.; Jacob van Eyck; Johann Sebastian Bach; Georg Philipp Telemann; Johann Joachim Quantz; Anton Heberle; Markus Zahnhausen; Christiane Martini; Hans-Dieter Renken", "perf_ru": "Элизабет Шванда", "perf_orig": "Elisabeth Schwanda", "author": "", "abook": "", "note": ""},
   {"n": 69, "photos": ["069.jpg"], "title": "Cantate Domino (вкладыш)", "discs": 1, "origin": "Германия (Ганновер; частная запись концерта 30.06.2019)", "genre": "старинная музыка; ренессанс", "type": "концертная запись", "comp_ru": "Питер Филлипс; Джузеппе Торелли; Якоб ван Эйк; Джон Дауленд; Доменико Рониони Таджо; Мориц, ландграф Гессенский; Хайнц Витте", "comp_orig": "Peter Phillips; Giuseppe Torelli; Jacob van Eyck; John Dowland; Domenico Rognoni Taeggio; Moritz Landgraf von Hessen; Heinz Witte", "perf_ru": "Seraphim Consort; Элизабет Шванда", "perf_orig": "Seraphim-Consort; Elisabeth Schwanda", "author": "", "abook": "", "note": "Совпадает с вкладышем 033 (диск 031): возможно, дубль"}
 ];
+// ─── /ДАННЫЕ ───
 
 const SEP = /\s*;\s*/;
 const split = s => (s||"").split(SEP).map(x=>x.trim()).filter(x=>x && x!=="—");
@@ -154,7 +123,8 @@ function render(){
   const g=sel.g.value,c=sel.c.value,p=sel.p.value,t=norm(q.value.trim());
   shown=DATA.filter(r=>(!g||split(r.genre).includes(g))&&(!c||split(r.comp_ru).includes(c))&&(!p||split(r.perf_ru).includes(p))&&(!t||r._h.includes(t)));
   body.innerHTML=shown.map((r,i)=>{
-    const th=r.photos.map((f,k)=>'<img loading="lazy" src="'+BASE+f+'" data-i="'+i+'" data-k="'+k+'" alt="'+esc(r.title)+'" title="'+f+'">').join("");
+    // Превью — из thumbs/ (fallback на оригинал через onerror)
+    const th=r.photos.map((f,k)=>'<img loading="lazy" src="'+THUMBS+f+'" data-full="'+BASE+f+'" data-i="'+i+'" data-k="'+k+'" alt="'+esc(r.title)+'" title="'+f+'" onerror="this.onerror=null;this.src=\''+BASE+f+'\'">').join("");
     return '<tr><td class="n">'+String(r.n).padStart(3,"0")+'</td><td><div class="thumbs">'+th+'</div></td>'+
     '<td class="title-col">'+esc(r.title)+'</td><td>'+r.discs+'</td><td>'+esc(r.origin)+'</td><td>'+esc(r.genre)+'</td><td>'+esc(r.type)+'</td>'+
     '<td>'+esc(r.comp_ru)+'</td><td class="small">'+esc(r.comp_orig)+'</td><td>'+esc(r.perf_ru)+'</td><td class="small">'+esc(r.perf_orig)+'</td>'+
@@ -168,10 +138,17 @@ Object.values(sel).forEach(e=>e.addEventListener("change",render));
 q.addEventListener("input",render);
 document.getElementById("reset").onclick=()=>{Object.values(sel).forEach(e=>e.value="");q.value="";render();};
 
-// Всплывающее окно с фото
+// Всплывающее окно — всегда оригинал (BASE + f), не миниатюра
 const lb=document.getElementById("lb"),lbi=document.getElementById("lbi"),lbc=document.getElementById("lbc");
 let ci=0,ck=0;
-function openLb(i,k){ci=i;ck=k;const r=shown[i];lbi.src=BASE+r.photos[k];lbc.textContent=String(r.n).padStart(3,"0")+" · "+r.title+" · "+r.photos[k]+" ("+(k+1)+"/"+r.photos.length+")";lb.classList.add("on");}
+function openLb(i,k){
+  ci=i;ck=k;
+  const r=shown[i];
+  const el=document.querySelector('img[data-i="'+i+'"][data-k="'+k+'"]');
+  lbi.src=(el&&el.dataset.full)?el.dataset.full:(BASE+r.photos[k]);
+  lbc.textContent=String(r.n).padStart(3,"0")+" · "+r.title+" · "+r.photos[k]+" ("+(k+1)+"/"+r.photos.length+")";
+  lb.classList.add("on");
+}
 function step(d){const r=shown[ci];ck=(ck+d+r.photos.length)%r.photos.length;openLb(ci,ck);}
 body.addEventListener("click",e=>{const im=e.target.closest("img");if(im)openLb(+im.dataset.i,+im.dataset.k);});
 document.getElementById("lbx").onclick=()=>lb.classList.remove("on");
